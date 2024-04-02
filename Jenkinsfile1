@@ -1,11 +1,11 @@
 properties([pipelineTriggers([pollSCM('* * * * * ')])])
 node("test"){
     stage("clone"){
-        git branch: 'develop', url: 'https://github.com/kerenmal/class_7.git'
+        git branch: 'deelop', url: 'https://github.com/kerenmal/class_7.git'
 
     }
     stage("execute"){
         bat "dir"
-        bat "c:\\Users\\kmalikin\\AppData\\Local\\Programs\\Python\\Python39\\disk_resizer.py"
+        bat "c:\\Users\\kmalikin\\AppData\\Local\\Programs\\Python\\Python39\\python disk_reizer.py"
     }
 }
