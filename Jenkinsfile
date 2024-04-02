@@ -1,3 +1,4 @@
+properties([pipelineTriggers([pollSCM('* * * * * ')])])
 node("test"){
     stage("clone"){
         git branch: 'main', url: 'https://github.com/kerenmal/class_7.git'
