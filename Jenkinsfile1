@@ -6,6 +6,6 @@ node("test"){
     }
     stage("execute"){
         bat "dir"
-        bat "c:\\Users\\kmalikin\\AppData\\Local\\Programs\\Python\\Python39\\python disk_reizer.py"
+        bat "c:\\Users\\kmalikin\\AppData\\Local\\Programs\\Python\\Python39\\python disk_resizer.py"
     }
 }
